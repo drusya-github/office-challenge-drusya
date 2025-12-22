@@ -49,7 +49,7 @@ If automatic sideloading fails, please [sideload the manifest manually](https://
 1. Ensure your solution meets all the requirements outlined above.
 2. Share your solution as a zip file (without the node_modules folder).
 3. Include any necessary instructions to run and test your solution, BUT it should be straightforward to run following the steps in the "Run the Challenge" section.
-4. Submit your solution before the deadline specified in the challenge announcement.
+4. Submit your solution to yotam.segal@mccarren.ai before the deadline specified in the challenge announcement.
 
 Good luck, and we look forward to seeing your innovative solutions!
 
