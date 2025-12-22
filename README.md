@@ -16,15 +16,14 @@ Create a button that will redact sensitive information from a Word document, add
     - Make sure to only use Tracking Changes if the Word API is available
     [Word JavaScript API requirement set 1.5 - Office Add-ins | Microsoft Learn](https://learn.microsoft.com/en-us/javascript/api/requirement-sets/word/word-api-1-5-requirement-set?view=word-js-preview)
 
-
-
 ## Technical Requirements
 
 - Code must be with TypeScript.
 - You are free to use any framework or build tool (Vite, Next.js, etc.),  DON'T use the minimum setup of this repo.
-- We'd like to see a self written CSS for styling instead of external libraries.
+- Use self written CSS for styling instead of external libraries, we expect good design and craftsmanship.
 - The solution must run in Word on the web or Word desktop.
 - Don't create a public forked repository, otherwise your solution will be disqualified. Share your solution as a private repository or a zip file.
+- One of the evaluation criteria will be code quality, so please ensure your code is clean, well-structured, and follows best practices and crasftsmanship.
 
 
 ## Testing Your Solution
@@ -42,4 +41,14 @@ We will use a different document to evaluate your solution, so ensure that your 
    - Attempts to sideload to Word.
 
 If automatic sideloading fails, please [sideload the manifest manually](https://learn.microsoft.com/office/dev/add-ins/testing/sideload-office-add-ins-for-testing).
+
+
+## Submission
+
+1. Ensure your solution meets all the requirements outlined above.
+2. Share your solution as a zip file (without the node_modules folder).
+3. Include any necessary instructions to run and test your solution, BUT it should be straightforward to run following the steps in the "Run the Challenge" section.
+4. Submit your solution before the deadline specified in the challenge announcement.
+
+Good luck, and we look forward to seeing your innovative solutions!
 
