@@ -34,8 +34,9 @@ We will use a different document to evaluate your solution, so ensure that your 
 
 ## Run the Challenge
 
-1. `npm install`
-2. `npm start`
+1. We recommend cloning the repository to your local machine to get started.
+2. `npm install`
+3. `npm start`
    - Starts local server on port 3000.
    - Compiles TypeScript.
    - Attempts to sideload to Word.
