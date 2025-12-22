@@ -21,7 +21,7 @@ Create a button that will redact sensitive information from a Word document, add
 ## Technical Requirements
 
 - Code must be with TypeScript.
-- You are free to use any framework or build tool (Vite, Next.js, etc.) or continue with the provided minimal setup.
+- You are free to use any framework or build tool (Vite, Next.js, etc.),  DON'T use the minimum setup of this repo.
 - We'd like to see a self written CSS for styling instead of external libraries.
 - The solution must run in Word on the web or Word desktop.
 - Don't create a public forked repository, otherwise your solution will be disqualified. Share your solution as a private repository or a zip file.
