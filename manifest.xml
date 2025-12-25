@@ -5,19 +5,24 @@
   xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>c495822f-cbcc-454a-8fe1-5a8ab0264834</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Contoso</ProviderName>
+  <ProviderName>Document Redaction</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Add headers" />
-  <Description DefaultValue="Add headers to Word documents as they are opened." />
-  <IconUrl DefaultValue="https://localhost:3000/icon.png" />
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/icon.png" />
-  <SupportUrl DefaultValue="https://www.contoso.com/help" />
+  <DisplayName DefaultValue="Document Redaction" />
+  <Description DefaultValue="Redact sensitive information from Word documents with tracking." />
+  <IconUrl DefaultValue="https://localhost:3000/icon.svg" />
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/icon.svg" />
+  <SupportUrl DefaultValue="https://github.com" />
   <AppDomains>
-    <AppDomain>https://www.contoso.com</AppDomain>
+    <AppDomain>https://localhost:3000</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Document" />
   </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="WordApi" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
   <DefaultSettings>
     <SourceLocation DefaultValue="https://localhost:3000/index.html" />
   </DefaultSettings>
@@ -65,24 +70,24 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/icon.png" />
-        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/icon.png" />
-        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/icon.png" />
+        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/icon.svg" />
+        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/icon.svg" />
+        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/icon.svg" />
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl"
-          DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
+          DefaultValue="https://learn.microsoft.com/office/dev/add-ins/" />
         <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/index.html" />
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!" />
-        <bt:String id="CommandsGroup.Label" DefaultValue="Doco Challenge" />
-        <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane" />
+        <bt:String id="GetStarted.Title" DefaultValue="Document Redaction Ready" />
+        <bt:String id="CommandsGroup.Label" DefaultValue="Redaction Tools" />
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Redact Document" />
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description"
-          DefaultValue="Your sample add-in loaded successfully. Go to the HOME tab and click the 'Show Task Pane' button to get started." />
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to show the task pane" />
+          DefaultValue="Your Document Redaction add-in is ready. Click 'Redact Document' in the Home tab to protect sensitive information." />
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Open the Document Redaction panel to redact emails, phone numbers, and SSNs." />
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>

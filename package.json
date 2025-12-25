@@ -1,16 +1,13 @@
 {
-  "name": "office-addin-challenge",
-  "version": "0.0.1",
-  "config": {
-    "app_to_debug": "word",
-    "app_type_to_debug": "desktop",
-    "dev_server_port": 3000
-  },
+  "name": "document-redaction-addin",
+  "version": "1.0.0",
+  "description": "Word Add-in for document redaction with tracking",
+  "type": "module",
   "scripts": {
-    "start": "concurrently \"npm run watch\" \"npm run dev-server\" \"office-addin-debugging start manifest.xml\"",
-    "dev-server": "http-server -S --cors . -p 3000",
-    "watch": "tsc -w",
-    "build": "tsc",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "concurrently \"npm run dev\" \"office-addin-debugging start manifest.xml\"",
     "stop": "office-addin-debugging stop manifest.xml",
     "validate": "office-addin-manifest validate manifest.xml"
   },
@@ -18,10 +15,10 @@
   "devDependencies": {
     "@types/office-js": "^1.0.377",
     "concurrently": "^8.2.2",
-    "http-server": "^14.1.1",
     "office-addin-debugging": "^5.1.6",
     "office-addin-dev-certs": "^1.13.5",
     "office-addin-manifest": "^1.13.6",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "vite": "^5.4.0"
   }
 }
